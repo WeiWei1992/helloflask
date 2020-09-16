@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% from 'macros.html' import qux %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{user.username}}</title>
+
+</head>
+<body>
+<h1>This is Template</h1>
+
+<a href="{{url_for('index')}}">&larr;Return</a>
+
+<ul>
+    {% for movie in movies %}
+    <li>{{movie.name}} - {{movie.year}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+
