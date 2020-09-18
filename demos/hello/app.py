@@ -151,3 +151,6 @@ def greet(name):
 def hello():
     """Just say hello."""
     click.echo('Hello, Human!')
+
+if __name__=="__main__":
+    app.run()
